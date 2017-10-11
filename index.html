@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+  <title>Namedy Makela App</title>
+</head>
+<style>
+body, input{
+	text-align: center;
+	
+}
+
+button{
+	margin-top: 20px;
+}
+
+
+
+
+</style>
+<body>
+	FirstName:
+	<input id='first' type="text" name="firstName"><br>
+	LastName:
+	<input id='last'type="text" name="lastName"> <br>
+	<button id='btn'>Submit</button>
+
+<h1 id='name'></h1>
+
+<script type="text/javascript">
+function makedy(){
+var first = document.getElementById('first').value;
+var last = document.getElementById('last').value;
+first = first+'dy';
+last = last+'la';
+document.getElementById('name').innerHTML = first + ' '+ last;
+}
+document.getElementById('btn').onclick = makedy;
+</script>
+
+</body>
+
+</html> 
