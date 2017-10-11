@@ -1,2 +1,0 @@
-# namedymakela
-uhhh
